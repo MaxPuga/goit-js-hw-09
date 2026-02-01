@@ -8,18 +8,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
+    <!-- <load
       src="./partials/header.html"
       icon-path="./img/sprite.svg#logo"
       highlight-curr="active"
-    />
+    /> -->
 
     <main>
       <div class="container">
+                <load src="./partials/back-link.html" />
         <h1 class="main-title">
         Form
         </h1>
-        <load src="./partials/back-link.html" />
+            
+        <form class="feedback-form" autocomplete="off">
+      <label class="form-field">
+        Email
+        <input type="email" name="email" autofocus class="input-field"/>
+      </label>
+      <label class="form-field">
+        Message
+        <textarea name="message" rows="8" class="input-field-msg"></textarea>
+      </label>
+      <button class="login-btn" type="submit">Submit</button>
+    </form>
       </div>
     </main>
 
